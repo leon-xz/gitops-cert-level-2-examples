@@ -22,3 +22,9 @@ spec:
     syncOptions:
       - CreateNamespace=true  
    
+  ignoreDifferences:
+  - group: data
+    kind: Secret
+    jsonPointers:
+    - /data/my-password
+    
